@@ -1,0 +1,22 @@
+{% extends "OCPlatformBundle::layout.html.twig" %}
+
+{% block title %} 
+    {{parent()}}   
+{% endblock %}
+
+{% block body %}
+    <form action="{{path('login_check')}}" method="post">
+        <label>
+            Pseudonyme :
+            <input type="text" name="_username"  />
+            
+        </label>    
+            <br/>
+        <label>
+            Mot de passe :
+            <input type="password" name="_password"  />
+            
+        </label>    
+        <button type="submit"> Connexion </button>
+    </form>
+{% endblock %}

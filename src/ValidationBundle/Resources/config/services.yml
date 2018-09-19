@@ -1,0 +1,7 @@
+services:
+   serializer.example:
+        class: ValidationBundle\Controller\SerializerController
+        
+   test:
+       class: ValidationBundle\Services\Test
+        

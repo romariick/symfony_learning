@@ -1,0 +1,58 @@
+{% extends "OCPlatformBundle::layout.html.twig" %}
+{% block title %}
+    {{parent()}}
+    {#Parent est utilisé pour recupérer la valeur du parent #}
+{% endblock %}
+
+{% block body %}
+   
+    <p>
+        <h1>Test if twig</h1>
+           {#Commentaire #}      
+            {% if pseudo < 2 %}
+                Il faut avoir au moins 2
+             {% elseif pseudo > 2%}
+                 Il faut avoir plus 2
+              {% else %}   
+            {% endif %} 
+        </p>
+        <p>
+            <h1>Test for twig   </h1>    
+            <ul>
+                {% for membre in membre %}
+                    <li>{{membre.nom}} Index : {{loop.length}} ; </li>
+                {% endfor %}
+            </ul>
+        </p>
+        <p>
+        <h1>Test if variable existe</h1>
+        {% if var is defined %}
+            Variable existe
+            {% else %}
+                Variable n'existe pas
+        {% endif %}    
+        </p>
+        <p>
+            <h1>Test si pair(Even) ou impair(Odd)</h1>
+            {% for liste_membre in membre %}
+                {%if loop.index is even %}
+                    Pair
+                    {% else %}
+                        Impair
+                {% endif %}
+            {% endfor %}    
+        </p>
+        <h1>Test format Twig like sprintf</h1>
+        <p>    
+            {{"Affchier un text %s" | format('126')}}
+        </p>
+        <h1>Test variable globals app</h1>
+        <p>
+            Afficher variable global           
+            {{app.request}}
+        </p>
+        <h1>Afficher une variable </h1>
+        <p>
+            {{webmaster}}
+        </p>
+{% endblock %}

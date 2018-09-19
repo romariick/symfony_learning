@@ -1,0 +1,15 @@
+validation:
+    resource: "@ValidationBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ref:
+    resource: "@REFBundle/Resources/config/routing.yml"
+    prefix:   /
+
+test_preparation:
+    resource: "@TestPreparationBundle/Resources/config/routing.yml"
+    prefix:   /
+
+oc_platform:
+    resource: "@OCPlatformBundle/Resources/config/routing.yml"
+    prefix:   /

@@ -1,0 +1,38 @@
+services:
+    my_event_subscriber:
+        class: OC\PlatformBundle\Listener\InscriptionListener
+        tags:
+            - {name: eni.event_subscriber}
+            
+    tags.exmple:
+        class: OC\PlatformBundle\Services\Tags
+            
+#    tags.exemple:
+#        class: OC\PlatformBundle\Listener\TagsListener
+#        arguments:
+#            - "@tags.exmple"
+#        tags:
+#            - {name: kernel.event_listener, event: kernel.response, method: executeTags} 
+            
+    tags.exemple.kernerequest:
+        class: OC\PlatformBundle\Listener\TagsListenerRequest
+        tags:
+            - {name: kernel.event_listener, event: kernel.exception, method: executeRequest}
+
+    constumize_listener:
+        class: OC\PlatformBundle\Listener\MessageListener
+        tags:
+             - {name: kernel.event_listener, event: oc_plateform.post_message, method: postMessage }
+       
+    subscrided_event:
+       class: OC\PlatformBundle\Listener\MessageSubscriberEvent
+       tags:
+           - {name: kernel.event_subscriber}
+    main_provider:
+        class: OC\PlatformBundle\Provider\UserProvider
+        arguments:
+           - "@doctrine.orm.default_entity_manager"
+        
+    route_by_service:
+        class: OC\PlateformBundlle\Controller\ServiceController
+        

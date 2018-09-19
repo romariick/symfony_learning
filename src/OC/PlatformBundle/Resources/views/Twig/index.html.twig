@@ -1,0 +1,15 @@
+{% extends "::base.html.twig"%}
+{% block title %} 
+    Accueil - {{parent()}}
+{% endblock %}
+
+{% block body %}
+    <h3>1. How to render a variables : {{afficher}}</h3>
+ 
+    <a href="{{webmaster}}">Mot de passe oublié</a>
+       
+    {% if app.environment == 'dev' %}
+        {% set a = webmaster %} 
+    {% endif %}    
+       
+{% endblock %}

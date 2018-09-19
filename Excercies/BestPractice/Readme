@@ -1,0 +1,13 @@
+- 5 variables, 10 actions, 20 lignes de code
+- snake_case : template name
+- AppBundle/Twig l'endroit où on met les twigs
+- AppBundle/Form
+- insfrascture related : parameters.yml
+- install application : paramenters.yml
+- options config : config.yml
+- all configuration : parameters.yml
+- composer installer : symfony new blog
+- AppBundle : application logic
+- Form utiliser AbstracType
+- Translation .xliff
+- 

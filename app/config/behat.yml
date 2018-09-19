@@ -1,0 +1,8 @@
+default:
+    # ...
+    extensions:
+        Behat\Symfony2Extension: ~
+    suites:
+        my_suite:
+            type: symfony_bundle
+            bundle: AppBundle

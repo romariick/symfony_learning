@@ -1,0 +1,19 @@
+services:
+    
+    somme:
+        class: OC\PlatformBundle\Services\Somme
+         
+    somme.rule:
+        class: OC\PlatformBundle\Services\SommeRules
+        tags:
+            - {name: somme.ex}
+            
+    console_subsciber:
+        class: OC\PlatformBundle\Listener\ConsoleListener
+        tags:
+            - {name: kernel.event_subscriber}
+            
+#    session_listener:
+#        class: OC\PlatformBundle\Listener\SessionListenerCheck
+#        tags:
+#            - {name: kernel.event_listener, event: kernel.response, method: onKernelResponse}

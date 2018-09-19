@@ -1,0 +1,16 @@
+{% extends "OCPlatformBundle::layout.html.twig" %}
+
+{% block title %} 
+    {{parent()}}   
+{% endblock %}
+
+{% block body %}
+  {{ form_start(form)}}
+  
+    {{form_row(form.published)}}
+        {{form_label(form.published, 'Case à cocher')}}
+       {{form_errors(form.published)}}
+       
+{{ form_widget(form) }}
+{{ form_end(form) }}
+{% endblock %}

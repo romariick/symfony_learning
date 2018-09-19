@@ -1,0 +1,11 @@
+validation_homepage:
+    path:     /{_locale}/{_format}/validation
+    defaults: { _controller: ValidationBundle:Default:index }
+
+validation_homepage2:
+    path:     /{_locale}/{_format}/validation/v2/test
+    defaults: { _controller: ValidationBundle:Sec:index }
+
+serializer_route:
+    path: /serializer
+    defaults : { _controller: serializer.example:indexAction }

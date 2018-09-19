@@ -1,0 +1,9 @@
+# Create cache Item
+
+    - getItem()
+    - isHit
+
+# Bases: 
+ - Pool : Repository
+ - Item : Key/value
+ - Adapter: Database

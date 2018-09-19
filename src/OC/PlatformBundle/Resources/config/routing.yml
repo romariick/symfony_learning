@@ -1,0 +1,106 @@
+oc_platform_home:
+    path:     /{page}
+    defaults: 
+        _controller: OCPlatformBundle:Advert:index
+        page: 1
+    requirements:
+        page: \d+
+
+oc_platform_view:
+    path:   /advert/{id}
+    defaults:
+        _controller: OCPlatformBundle:Advert:view
+
+oc_platform_add:
+    path:   /add
+    defaults:
+        _controller: OCPlatformBundle:Advert:add
+        
+oc_platform_edit:
+    path:   /edit/{id}
+    defaults:
+        _controller: OCPlatformBundle:Advert:edit
+    requirements:
+        id: \d+
+
+oc__paltform_delete:
+    path: /delete/{id}
+    defaults:
+        _controller: OCPlatformBundle:Advert:delete
+    requirements:
+        id: \d+
+        
+oc_constumize_listener:
+    path: /constumizelistener
+    defaults:
+        _controller: OCPlatformBundle:CustomizeListener:constumizeListener
+
+oc_subscrided_event:
+    path: /subscrided
+    defaults:
+        _controller: OCPlatformBundle:SubscriberEvent:subscriber
+
+tags:
+    path: /tags
+    defaults:
+        _controller: OCPlatformBundle:Tags:tags
+security:
+    path: /security
+    defaults:
+        _controller: OCPlatformBundle:Security:security
+
+logout:
+    path: /logout
+    defaults:
+        _controller: OCPlatformBundle:Security:logout
+
+login_check:
+    path: /login_check
+    defaults:
+        _controller: OCPlatformBundle:Security:loginCheck
+login:
+    path: /login
+    defaults:
+        _controller: OCPlatformBundle:Security:login
+
+validator:
+    path: /validator
+    defaults:
+        _controller: OCPlatformBundle:ValidatorUseContact:index
+
+twig:
+    path: /twig
+    defaults:
+        _controller: OCPlatformBundle:Twig:twig
+
+language:
+    path: /language/{slug}
+    defaults:
+        _controller: OCPlatformBundle:Language:language
+
+test_route:
+    path: /test
+    defaults:
+        {_controller: 'strtolower', str: 'HELLO WORD'}
+
+#service_route:
+    #pattern: /service/{nome}/{prenom}
+    #defaults:
+        #{_controller: OCPlatformBundle:Service:service}
+
+formulaire:
+    path: /formulaire
+    defaults:
+         _controller: OCPlatformBundle:Formulaire:form
+ 
+cobail:
+    path: /cobaile
+    defaults:
+        _controller: OCPlatformBundle:Cobaile:cobaile
+    
+translation:
+    path: /blog/
+    defaults:
+         _controller: OCPlatformBundle:TranslationAndPlurazation:trans
+         
+       

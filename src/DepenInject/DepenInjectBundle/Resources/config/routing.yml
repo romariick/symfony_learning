@@ -1,0 +1,3 @@
+depen_inject_depen_inject_homepage:
+    path:     /di
+    defaults: { _controller: DepenInjectDepenInjectBundle:Default:index }

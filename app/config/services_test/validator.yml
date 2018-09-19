@@ -1,0 +1,5 @@
+services:
+    oc_plateform_antifloodvalidator:
+        class: OC\PlatformBundle\Validator\AntifloodValidator
+        tags:
+            - {name: validator.constraint_validator, alias: oc_platform_antiflood}

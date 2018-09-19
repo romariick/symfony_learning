@@ -1,0 +1,11 @@
+test_preparation_homepage:
+    path:     /
+    defaults: { _controller: TestPreparationBundle:Default:index }
+
+redirectt_route:
+    path: /toroute/{page}
+    defaults: {_controller: TestPreparationBundle:Default:route, page: 1}
+    requirements:
+        page: '\d+'
+    
+        

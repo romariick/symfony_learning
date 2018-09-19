@@ -1,0 +1,12 @@
+=> .+  : accepte /blog/{slug1}/{slug2}
+
+Constructeur :
+- path
+- defaults
+- requirements
+- methods
+- host
+- conditions
+
+=> Route executé dans l'ordre ; s'il trouve le premier il exécute.
+

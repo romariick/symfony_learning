@@ -1,0 +1,15 @@
+{% extends "OCPlatformBundle::layout.html.twig" %}
+
+{% block title %} 
+    {{parent()}}   
+{% endblock %}
+
+{% block body %}
+    <h1>Ajout une annoce </h1>
+    
+    {{ include 'OCPlatformBundle:Advert:form.html.twig' }}
+    <p>
+        Attention : cette annonce sera ajoutée directement sur la page d'accueil
+        après validation du formulaire.
+    </p>
+{% endblock %}

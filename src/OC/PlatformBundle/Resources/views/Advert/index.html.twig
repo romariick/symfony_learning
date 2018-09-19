@@ -1,0 +1,19 @@
+{% extends "OCPlatformBundle::layout.html.twig"%}
+{% block title %} 
+    Accueil - {{parent()}}
+{% endblock %}
+
+{% block ocplateform_bundle %}
+    <h1>Liste des annonces </h1>
+    <ul class='nav nav-pills nav-stacked'>
+    {% for advert in listAdvert %}
+        <li>
+            <a href="{{path('oc_platform_view', {'id': advert.id})}}">
+             {{advert.title}}
+            </a>
+            par {{advert.author}}
+            le {{advert.date|date('d/m/y')}}
+        </li>
+    {% endfor %}    
+  </ul>
+{% endblock %}

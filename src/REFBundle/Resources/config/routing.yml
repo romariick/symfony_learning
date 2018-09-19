@@ -1,0 +1,7 @@
+ref_homepage:
+    path:     /ref/{placehoder}
+    defaults: { _controller: REFBundle:Default:index, placehoder: 1 }
+    requirements:
+        placehoder: '.+'
+
+  

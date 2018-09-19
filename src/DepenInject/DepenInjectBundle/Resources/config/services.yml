@@ -1,0 +1,4 @@
+#services:
+#    depen_inject_depen_inject.example:
+#        class: DepenInject\DepenInjectBundle\Services\Example
+        
