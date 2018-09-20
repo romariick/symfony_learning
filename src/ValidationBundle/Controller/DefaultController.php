@@ -24,7 +24,8 @@ class DefaultController extends Controller
             die('is valid');
         }
 
-        return $this->render('ValidationBundle:Default:index.html.twig',
+        return $this->render(
+            'ValidationBundle:Default:index.html.twig',
                [
                    'form' => $form->createView(),
                ]

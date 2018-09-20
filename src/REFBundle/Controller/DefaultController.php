@@ -27,7 +27,8 @@ class DefaultController extends Controller
 //
 //        $listeRefCcu = $em->getRepository('REFBundle:Ref')->findAll();
 //
-        return $this->render('REFBundle:Default:test.html.twig'
+        return $this->render(
+            'REFBundle:Default:test.html.twig'
                 );
     }
 }

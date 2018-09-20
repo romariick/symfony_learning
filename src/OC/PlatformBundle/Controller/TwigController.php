@@ -10,7 +10,9 @@ class TwigController extends Controller
     {
         $afficher = 'Utiliser {{}}';
 
-        return $this->render('OCPlatformBundle:Twig:index.html.twig',
-                     ['afficher' => $afficher]);
+        return $this->render(
+            'OCPlatformBundle:Twig:index.html.twig',
+                     ['afficher' => $afficher]
+        );
     }
 }

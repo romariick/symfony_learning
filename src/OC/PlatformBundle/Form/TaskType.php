@@ -17,8 +17,11 @@ class TaskType extends AbstractType
     {
         $builder->add('task', TextType::class)
             ->add('dueDate', DateType::class)
-            ->add('published', \Symfony\Component\Form\Extension\Core\Type\CheckboxType::class,
-                    array('required' => true))
+            ->add(
+                'published',
+                \Symfony\Component\Form\Extension\Core\Type\CheckboxType::class,
+                    array('required' => true)
+            )
             ->add('image', ImageType::class)
             ->add('file', \Symfony\Component\Form\Extension\Core\Type\FileType::class)
             ->add('save', SubmitType::class, array('label' => 'Create Task'));
