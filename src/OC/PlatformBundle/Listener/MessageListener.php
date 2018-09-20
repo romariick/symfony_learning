@@ -2,11 +2,12 @@
 
 namespace OC\PlatformBundle\Listener;
 
-class MessageListener {
-
-    public function postMessage() 
+class MessageListener
+{
+    public function postMessage()
     {
-        die('constumize message Ok');        
+        die('constumize message Ok');
+
         return 'Post message';
     }
 }

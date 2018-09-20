@@ -2,13 +2,14 @@
 
 namespace OC\PlatformBundle\Services;
 
-class SommeRules {
-
-    public function __construct() {
-        ;
+class SommeRules
+{
+    public function __construct()
+    {
     }
-    
-     public function addMultiplication() {
+
+    public function addMultiplication()
+    {
         return 'Somme Rules';
     }
 }

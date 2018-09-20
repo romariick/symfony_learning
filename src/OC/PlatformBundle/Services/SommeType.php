@@ -2,17 +2,14 @@
 
 namespace OC\PlatformBundle\Services;
 
-
-
-class SommeType {
- 
-    public function __construct() {
-        ;
-    
+class SommeType
+{
+    public function __construct()
+    {
     }
-     public function multiplicationType() {
-     
-         return 'Type';
+
+    public function multiplicationType()
+    {
+        return 'Type';
     }
-    
 }

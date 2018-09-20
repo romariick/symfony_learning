@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 trait A
 {
@@ -15,5 +15,5 @@ class B
     use A;
 }
 
-$b = new B;
+$b = new B();
 echo $b->get();

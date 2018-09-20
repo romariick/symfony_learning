@@ -2,32 +2,28 @@
 
 namespace OC\PlatformBundle\Entity;
 
-
 class Image
 {
-    
     protected $url;
     protected $imageName;
-    
 
-    public function getUrl() {
+    public function getUrl()
+    {
         return $this->url;
     }
 
-    public function getImageName() {
+    public function getImageName()
+    {
         return $this->imageName;
     }
 
-    public function setUrl($url) {
+    public function setUrl($url)
+    {
         $this->url = $url;
     }
 
-    public function setImageName($imageName) {
+    public function setImageName($imageName)
+    {
         $this->imageName = $imageName;
     }
-    
- 
-
-
-
 }

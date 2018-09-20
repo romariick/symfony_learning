@@ -5,16 +5,15 @@ namespace ValidationBundle\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class HttpController {
-
-    
-    public function indexAction(){
-        
+class HttpController
+{
+    public function indexAction()
+    {
         $request = new Request();
-        
+
         $session = new \Symfony\Component\HttpFoundation\Session\Session();
         $request->setSession($session);
-        
+
         $session->getBag($name);
         $session->getFlashBag();
         $session->save();
@@ -27,7 +26,7 @@ class HttpController {
         $session->getId();
         $session->invalidate();
         $session->start();
-        
+
         $request->create($uri);
         $request->create($uri, $method);
         $request->createFromGlobals();
@@ -43,15 +42,14 @@ class HttpController {
         $request->getLanguages();
         $request->getSession();
         $request->getPathInfo();
-        
+
         $request->server;
         $request->query;
         $request->cookies;
         $request->get($key);
         $request->files;
         $request->headers->get($key);
-      
-        
+
         $response = new Response();
         $response->setStatusCode($code);
         $response->setContent($response);
@@ -68,11 +66,11 @@ class HttpController {
         $response->getProtocolVersion();
         $response->isCacheable();
         $response->mustRevalidate();
-       
-        /**
+
+        /*
          * 1xx : Informational
          * 100 : Continue
-         * 101 : Switch protocol 
+         * 101 : Switch protocol
          * 2xx : Success
          * 200 : Ok
          * 201/ Created
@@ -81,14 +79,14 @@ class HttpController {
          * 204 : Non content
          * 205 : Reset content
          * 206 : Partial content
-         * 
+         *
          * 3xx : Redirection
          * 300 : Multiple choice
          * 301 : Move permanently
          * 302 : Found
          * 303 : See other
          * 304 : Not modified
-         * 
+         *
          * 4xx : Client Error
          * 400 : Band request
          * 401 : Unauthoriized
@@ -99,17 +97,17 @@ class HttpController {
          * 406 : Not acceptable
          * 409 : Conflict
          * 4010 : Gone
-         * 
+         *
          * 5xx : Server Error
-         * 
+         *
          * 500 : Server error
          * 501 : Not implemented
          * 502 : Bad gateway
          * 503 : Service unvalaible
          * 504 : Gatewary timeout
          * 505 : Protocot not supported
-         * 
-         * 
+         *
+         *
          * Response header :
          *  - Location
          *  - Retry-After
@@ -119,8 +117,7 @@ class HttpController {
          *  - Server
          *  - Age
          *  - Accpte-Range
-         *  - Etag 
-         */ 
-                
+         *  - Etag
+         */
     }
 }

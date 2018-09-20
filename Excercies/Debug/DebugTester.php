@@ -13,7 +13,3 @@ DebugClassLoader::enable();
 /*Catch uncaugth PHP error and Exception and convert into nice response*/
 ExceptionHandler::register();
 ErrorHandler::register();
-
-
-
-

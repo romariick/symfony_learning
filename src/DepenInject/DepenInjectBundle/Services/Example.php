@@ -2,6 +2,7 @@
 
 namespace DepenInject\DepenInjectBundle\Services;
 
-class Example {
+class Example
+{
     //put your code here
 }

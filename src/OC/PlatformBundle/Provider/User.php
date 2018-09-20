@@ -1,7 +1,7 @@
 <?php
+
 namespace OC\PlatformBundle\Provider;
 
-use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\EquatableInterface;
 
@@ -14,7 +14,7 @@ class User implements UserInterface, EquatableInterface
 
     public function __construct($username, $password, $salt, array $roles)
     {
-   $this->username = $username;
+        $this->username = $username;
         $this->password = $password;
         $this->salt = $salt;
         $this->roles = $roles;
@@ -22,8 +22,8 @@ class User implements UserInterface, EquatableInterface
 
     public function getRoles()
     {
-         return array('ROLE_USER');
-       // return $this->roles;
+        return array('ROLE_USER');
+        // return $this->roles;
     }
 
     public function getPassword()
@@ -44,7 +44,8 @@ class User implements UserInterface, EquatableInterface
     public function eraseCredentials()
     {
     }
- public function isEqualTo(UserInterface $user)
+
+    public function isEqualTo(UserInterface $user)
     {
         if (!$user instanceof WebserviceUser) {
             return false;

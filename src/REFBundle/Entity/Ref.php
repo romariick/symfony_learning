@@ -5,7 +5,7 @@ namespace REFBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Ref
+ * Ref.
  *
  * @ORM\Table(name="ref")
  * @ORM\Entity(repositoryClass="REFBundle\Repository\RefRepository")
@@ -13,17 +13,15 @@ use Doctrine\ORM\Mapping as ORM;
 class Ref
 {
     /**
-     * @var integer
+     * @var int
      *
      * @ORM\Column(name="id", type="integer")
      * @ORM\id
      * @ORM\GeneratedValue(strategy="AUTO")
-     * 
      */
     private $id;
 
-
-     /**
+    /**
      * @var string
      *
      * @ORM\Column(name="titre", type="string", length=255, nullable=true)
@@ -78,28 +76,26 @@ class Ref
      * @ORM\Column(name="comment", type="string", length=255, nullable=true)
      */
     private $comment;
-    
-      /**
+
+    /**
      * @var string
      *
      * @ORM\Column(name="team", type="string", length=255, nullable=true)
      */
-    private $team  = 'IDP';
-
+    private $team = 'IDP';
 
     /**
-     * Get  id
+     * Get  id.
      *
      * @return int
      */
-    public function  getId()
+    public function getId()
     {
-     
         return   $this->id;
     }
 
     /**
-     * Set team
+     * Set team.
      *
      * @param string $team
      *
@@ -113,7 +109,7 @@ class Ref
     }
 
     /**
-     * Get team
+     * Get team.
      *
      * @return string
      */
@@ -123,7 +119,7 @@ class Ref
     }
 
     /**
-     * Set number
+     * Set number.
      *
      * @param string $number
      *
@@ -137,7 +133,7 @@ class Ref
     }
 
     /**
-     * Get number
+     * Get number.
      *
      * @return string
      */
@@ -146,8 +142,8 @@ class Ref
         return $this->number;
     }
 
-     /**
-     * Set title
+    /**
+     * Set title.
      *
      * @param string $title
      *
@@ -161,7 +157,7 @@ class Ref
     }
 
     /**
-     * Get title
+     * Get title.
      *
      * @return string
      */
@@ -171,7 +167,7 @@ class Ref
     }
 
     /**
-     * Set uat
+     * Set uat.
      *
      * @param string $uat
      *
@@ -185,7 +181,7 @@ class Ref
     }
 
     /**
-     * Get uat
+     * Get uat.
      *
      * @return string
      */
@@ -195,7 +191,7 @@ class Ref
     }
 
     /**
-     * Set po
+     * Set po.
      *
      * @param string $po
      *
@@ -209,7 +205,7 @@ class Ref
     }
 
     /**
-     * Get po
+     * Get po.
      *
      * @return string
      */
@@ -219,7 +215,7 @@ class Ref
     }
 
     /**
-     * Set dev
+     * Set dev.
      *
      * @param string $dev
      *
@@ -233,7 +229,7 @@ class Ref
     }
 
     /**
-     * Get dev
+     * Get dev.
      *
      * @return string
      */
@@ -243,7 +239,7 @@ class Ref
     }
 
     /**
-     * Set code
+     * Set code.
      *
      * @param string $code
      *
@@ -257,7 +253,7 @@ class Ref
     }
 
     /**
-     * Get code
+     * Get code.
      *
      * @return string
      */
@@ -267,7 +263,7 @@ class Ref
     }
 
     /**
-     * Set source
+     * Set source.
      *
      * @param string $source
      *
@@ -281,7 +277,7 @@ class Ref
     }
 
     /**
-     * Get source
+     * Get source.
      *
      * @return string
      */
@@ -291,7 +287,7 @@ class Ref
     }
 
     /**
-     * Set ref
+     * Set ref.
      *
      * @param string $ref
      *
@@ -305,7 +301,7 @@ class Ref
     }
 
     /**
-     * Get ref
+     * Get ref.
      *
      * @return string
      */
@@ -315,7 +311,7 @@ class Ref
     }
 
     /**
-     * Set comment
+     * Set comment.
      *
      * @param string $comment
      *
@@ -329,7 +325,7 @@ class Ref
     }
 
     /**
-     * Get comment
+     * Get comment.
      *
      * @return string
      */
@@ -338,4 +334,3 @@ class Ref
         return $this->comment;
     }
 }
-

@@ -14,4 +14,3 @@ $serializer = new Serializer($normalizer, $encoder);
 
 $serializer->serialize($data, $format);
 $serializer->deserialize($data, $type, $format);
-

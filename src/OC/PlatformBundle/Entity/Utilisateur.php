@@ -2,27 +2,33 @@
 
 namespace OC\PlatformBundle\Entity;
 
-class Utilisateur {
-
+class Utilisateur
+{
     private $nom;
     private $prenom;
-    
-    public function getNom() {
+
+    public function getNom()
+    {
         return $this->nom;
     }
-    public function getPrenom() {
+
+    public function getPrenom()
+    {
         return $this->prenom;
     }
 
-    public function setNom($nom) {
+    public function setNom($nom)
+    {
         $this->nom = $nom;
     }
 
-    public function setPrenom($prenom) {
+    public function setPrenom($prenom)
+    {
         $this->prenom = $prenom;
     }
-    
-    public function addSubscriber(){
+
+    public function addSubscriber()
+    {
         return 10 + 10;
     }
 }

@@ -2,7 +2,6 @@
 
 require_once __DIR__.'/../../vendor/autoload.php';
 
-use Symfony\Component\Validator\ValidatorBuilder;
 use Symfony\Component\Validator\Validation;
 use Symfony\Component\Validator\Constraints\IsNull;
 use Symfony\Component\Validator\Constraints\NotBlank;
@@ -37,7 +36,7 @@ $violations = $validator->validate(false, new isFalse());
 
 var_dump($violations).PHP_EOL;
 
-$violations = $validator->validate("1212", new Type('int', ['message'=>'']));
+$violations = $validator->validate('1212', new Type('int', ['message' => '']));
 
 var_dump($violations);
 
@@ -48,5 +47,3 @@ var_dump($violations);
 $violations = $validator->validate('abc', new Length(3));
 
 var_dump($violations); die;
-
-

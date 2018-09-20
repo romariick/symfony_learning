@@ -2,9 +2,9 @@
 
 namespace ValidationBundle\Validator;
 
-
-class Person {
-      private $age;
+class Person
+{
+    private $age;
     private $name;
     private $sportsman;
 

@@ -3,7 +3,6 @@
 namespace OC\PlatformBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Table(name="app_users")
@@ -28,7 +27,6 @@ class User
      */
     private $password;
 
-  
     /**
      * @ORM\Column(name="is_active", type="boolean")
      */
@@ -82,7 +80,7 @@ class User
     /** @see \Serializable::unserialize() */
     public function unserialize($serialized)
     {
-        list (
+        list(
             $this->id,
             $this->username,
             $this->password,
@@ -90,9 +88,9 @@ class User
             // $this->salt
         ) = unserialize($serialized);
     }
-    
+
     /**
-     * Set roles
+     * Set roles.
      *
      * @param string $roles
      *
@@ -104,8 +102,9 @@ class User
 
         return $this;
     }
-      /**
-     * Set username
+
+    /**
+     * Set username.
      *
      * @param string $username
      *
@@ -117,8 +116,9 @@ class User
 
         return $this;
     }
-      /**
-     * Set password
+
+    /**
+     * Set password.
      *
      * @param string $password
      *
@@ -130,5 +130,4 @@ class User
 
         return $this;
     }
-
 }

@@ -1,8 +1,6 @@
 <?php
 
 use Behat\Behat\Context\Context;
-use Behat\Gherkin\Node\PyStringNode;
-use Behat\Gherkin\Node\TableNode;
 
 /**
  * Defines application features from the specific context.
@@ -18,15 +16,13 @@ class FeatureContext implements Context
      */
     public function __construct()
     {
-        
     }
-    
+
     /**
      * @Given An empty basket
      */
     public function anEmptyBasket()
     {
-      
         throw new PendingException();
     }
 
@@ -45,5 +41,4 @@ class FeatureContext implements Context
     {
         throw new PendingException();
     }
-
 }

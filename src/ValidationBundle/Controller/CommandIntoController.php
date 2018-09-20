@@ -4,21 +4,20 @@ namespace ValidationBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
+class CommandIntoController extends Controller
+{
+    public function indexAction()
+    {
+        $kernel = $this->get('kernel');
 
-class CommandIntoController extends Controller {
+        $application = new Application($kernel);
 
-    
-    public function indexAction(){
-      $kernel = $this->get('kernel');
-      
-      $application = new Application($kernel);
-      
-      $argument = [
+        $argument = [
           'command' => 'test:test',
-          'lastname' => 'romaric'
+          'lastname' => 'romaric',
       ];
-      
-      $inputArray = new ArrayInput($argument);
-      $application->run($inputArray, new NullOutput());
+
+        $inputArray = new ArrayInput($argument);
+        $application->run($inputArray, new NullOutput());
     }
 }

@@ -19,8 +19,8 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('oc_platform');
-     //  $rootNode->children()->scalarNode('nom')->end();
-        
+        //  $rootNode->children()->scalarNode('nom')->end();
+
         return $treeBuilder;
     }
 }

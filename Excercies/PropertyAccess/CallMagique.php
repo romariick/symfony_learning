@@ -3,6 +3,7 @@
 require_once __DIR__.'/../../vendor/autoload.php';
 
 use Symfony\Component\PropertyAccess\PropertyAccess;
+
 $accessor = PropertyAccess::createPropertyAccessor();
 
 class Person
@@ -31,7 +32,5 @@ $person = new Person();
 
 $wouter = $accessor->getValue($person, 'wouter');
 
-var_dump($wouter); 
+var_dump($wouter);
 //Wrong
-
-

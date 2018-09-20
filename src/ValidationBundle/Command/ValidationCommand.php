@@ -10,17 +10,14 @@ use Symfony\Component\Console\Input\InputOption;
 
 class ValidationCommand extends Command
 {
-    
-    protected function configure(){
+    protected function configure()
+    {
         $this->setName('test:test')
                 ->addArgument('lastname', InputArgument::OPTIONAL)
                 ->addOption('nom', InputOption::VALUE_OPTIONAL);
-                
     }
-    
-    protected function execute(InputInterface $input, OutputInterface $output){
-     
-       
-       
+
+    protected function execute(InputInterface $input, OutputInterface $output)
+    {
     }
 }

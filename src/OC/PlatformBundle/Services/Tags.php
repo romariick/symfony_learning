@@ -2,16 +2,16 @@
 
 namespace OC\PlatformBundle\Services;
 
-
-
-class Tags {
-
-    public function __construct() {
-        
+class Tags
+{
+    public function __construct()
+    {
     }
-    
-    public function executeTags() {
+
+    public function executeTags()
+    {
         die('premier');
+
         return 'Tags';
     }
 }

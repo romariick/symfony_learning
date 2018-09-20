@@ -7,10 +7,11 @@
  */
 
 /**
- * Description of KataOne
+ * Description of KataOne.
  *
  * @author Romaric
  */
-class KataOne {
+class KataOne
+{
     //put your code here
 }

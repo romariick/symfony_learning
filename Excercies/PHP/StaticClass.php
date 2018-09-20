@@ -3,6 +3,7 @@
 class A
 {
     protected static $attr = 'foo';
+
     public static function getAttr()
     {
         return static::$attr;
@@ -11,8 +12,8 @@ class A
 
 class B extends A
 {
-    public static function method() {
-        
+    public static function method()
+    {
     }
 
     protected static $attr = 'bar';
@@ -20,8 +21,6 @@ class B extends A
 
 echo B::getAttr();
 
-$bool = (bool) "true";
+$bool = (bool) 'true';
 
 echo $bool;
-
-        

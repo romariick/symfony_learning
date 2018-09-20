@@ -6,17 +6,17 @@ use Symfony\Component\PropertyAccess\PropertyAccess;
 
 $accessor = PropertyAccess::createPropertyAccessor();
 
-class Person{
-    
+class Person
+{
     public $firstName;
-    
-    public function getFirstName(){        
+
+    public function getFirstName()
+    {
         return 'Rayn';
     }
 }
 
 /** Reading form Objet with getter **/
-
 $person = new Person();
 $person->FirstName = 'Wounter';
 var_dump($person);
@@ -25,8 +25,8 @@ $firstName = $accessor->getValue($person, 'firstName');
 
 /** Reading for Array ..**/
 $person2 = ['first_name' => 'Wouter'];
-$readFromArray = $accessor->getValue($person2,'[first_name]');// Wouter
-$readFromArray2 = $accessor->getValue($person2,'[age]');// null
+$readFromArray = $accessor->getValue($person2, '[first_name]'); // Wouter
+$readFromArray2 = $accessor->getValue($person2, '[age]'); // null
 
 //var_dump($readFromArray2); die;
 /*Multiple Dimension reading from array */

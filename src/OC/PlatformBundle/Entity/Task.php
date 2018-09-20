@@ -1,19 +1,19 @@
 <?php
+
 namespace OC\PlatformBundle\Entity;
 
-use Symfony\Component\Validator\Constraint as Assert;
-use OC\PlatformBundle\Entity\Image;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
+
 class Task
 {
-    protected $task;    
+    protected $task;
     protected $published = true;
     protected $dueDate;
     protected $image;
     protected $file;
-    
-    public function __construct() {
-        
+
+    public function __construct()
+    {
     }
 
     public function getTask()
@@ -35,26 +35,34 @@ class Task
     {
         $this->dueDate = $dueDate;
     }
-    public function getPublished() {
+
+    public function getPublished()
+    {
         return $this->published;
     }
-    
-    public function setPublished($published) {
+
+    public function setPublished($published)
+    {
         $this->published = $published;
     }
-    public function getImage() {
+
+    public function getImage()
+    {
         return $this->image;
-        
     }
-    public function setImage(Image $image) {
+
+    public function setImage(Image $image)
+    {
         $this->image = $image;
     }
-    
-       public function getFile() {
+
+    public function getFile()
+    {
         return $this->file;
     }
 
-    public function setFile(UploadedFile $file = null) {
+    public function setFile(UploadedFile $file = null)
+    {
         $this->file = $file;
     }
 }

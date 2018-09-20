@@ -2,6 +2,6 @@
 
 namespace ValidationBunlde\Services;
 
-class Test {
-    
+class Test
+{
 }

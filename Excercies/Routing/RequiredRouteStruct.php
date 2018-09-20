@@ -46,15 +46,9 @@ $generator = new Symfony\Component\Routing\Generator\UrlGenerator($routes, $cont
 $url = $generator->generate('generate_route', ['slug' => 'my-blog-post']);
 var_dump($url);
 
-
 // Load route from a file YMAL ou XML ou PHP
 $locator = new FileLocator([__DIR__]);
 $loader = new YamlFileLoader($locator);
 $collection = $loader->load('routes.yml');
 
 var_dump($collection); die;
-        
-
-
-
-

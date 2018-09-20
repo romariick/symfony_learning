@@ -2,7 +2,6 @@
 
 namespace OC\PlatformBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use OC\PlatformBundle\Validator\Antiflood;
 
@@ -30,9 +29,8 @@ class Contact
      */
     private $datenaissance;
 
-
     /**
-     * Get id
+     * Get id.
      *
      * @return int
      */
@@ -42,7 +40,7 @@ class Contact
     }
 
     /**
-     * Set nom
+     * Set nom.
      *
      * @param string $nom
      *
@@ -56,7 +54,7 @@ class Contact
     }
 
     /**
-     * Get nom
+     * Get nom.
      *
      * @return string
      */
@@ -66,7 +64,7 @@ class Contact
     }
 
     /**
-     * Set prenom
+     * Set prenom.
      *
      * @param string $prenom
      *
@@ -80,7 +78,7 @@ class Contact
     }
 
     /**
-     * Get prenom
+     * Get prenom.
      *
      * @return string
      */
@@ -90,7 +88,7 @@ class Contact
     }
 
     /**
-     * Set datenaissance
+     * Set datenaissance.
      *
      * @param \DateTime $datenaissance
      *
@@ -104,7 +102,7 @@ class Contact
     }
 
     /**
-     * Get datenaissance
+     * Get datenaissance.
      *
      * @return \DateTime
      */
@@ -112,14 +110,13 @@ class Contact
     {
         return $this->datenaissance;
     }
-    
+
     /**
-     * 
      * @Assert\Callback
      */
     public function isContextValid(\Symfony\Component\Validator\Context\ExecutionContextInterface $context)
     {
-       $context
+        $context
             ->buildViolation('Enregister impossible')
             ->atPath('content')
             ->addViolation();

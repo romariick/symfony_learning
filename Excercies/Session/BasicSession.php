@@ -18,13 +18,11 @@ $flashBags = $session->getFlashBag()->get('warning');
 
 echo 'Session name : '.$session->getName().PHP_EOL;
 
-var_dump($session->all()); 
+var_dump($session->all());
 
 $session->clear();
 
-foreach ($flashBags as $flashBag){
-    var_dump($flashBag); die;
+foreach ($flashBags as $flashBag) {
+    var_dump($flashBag);
+    die;
 }
-
-        
-

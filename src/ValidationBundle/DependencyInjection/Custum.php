@@ -7,12 +7,10 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 class Custum implements CompilerPassInterface
 {
+    public function process(ContainerBuilder $container)
+    {
+        $definition = $container->getDefinition('serializer.example');
 
-    public function process(ContainerBuilder $container) {
-        
-       $definition =  $container->getDefinition('serializer.example');
-       
-       //dump($definition); die;
+        //dump($definition); die;
     }
-    
 }
