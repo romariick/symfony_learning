@@ -1,11 +1,9 @@
 A. Routing
-Methode dans le controlleur pour le template :
 
-  - $this->get('router')->generate('nom du route', ['id'=>5]
+  - $this->get('router')->generate('nom du route', ['id'=>5])
   - $this->generateUrl('nom de la route');
 
-NB : paramètre du système ave _format, _locale, _controller
-Dans le fichier de configuration du controlleur :
+NB : Guessing variable : _format, _locale, _controller
 
 Exemple :
 mon_controlleur:
@@ -14,11 +12,12 @@ mon_controlleur:
         _controller:  MonBundle:Controller:Action
         id: 5 # valeur par défaut
        _format; xml|json
-
     requirements:
        id: \d+ #valeur required
 
 B. Controller :
+
+    - $this->container->get('service_name');
 
 B.1 Objet Resquest :
    * Les paramètres contenue dans la route comme {id}
