@@ -24,10 +24,6 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "^2.0",
         "phpunit/phpunit":">=4.2",
-        "phpoffice/phpword": "^0.13.0",
-        "knplabs/knp-snappy-bundle": "^1.4",
-        "dompdf/dompdf": "^0.8.1",
-        "psliwa/php-pdf": "^1.2",
         "psliwa/pdf-bundle": "^1.0",
         "setasign/fpdf": "1.8.1"
     },
@@ -55,7 +51,7 @@
     },
     "config": {
         "platform": {
-            "php": "5.5.9"
+            "php": "7.1"
         }
     },
     "extra": {
