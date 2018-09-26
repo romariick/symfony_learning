@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new TestPreparationBundle\TestPreparationBundle(),
             new REFBundle\REFBundle(),
             new ValidationBundle\ValidationBundle(),
+            new RoutingBundle\RoutingBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

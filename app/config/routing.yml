@@ -1,3 +1,7 @@
+routing:
+    resource: "@RoutingBundle/Resources/config/routing.yml"
+    prefix:   /
+
 validation:
     resource: "@ValidationBundle/Resources/config/routing.yml"
     prefix:   /

@@ -1,0 +1,4 @@
+routing_homepage:
+    path:     /routing/
+    defaults: { _controller: RoutingBundle:Default:index }
+
