@@ -2,3 +2,7 @@ routing_homepage:
     path:     /routing/
     defaults: { _controller: RoutingBundle:Default:index }
 
+default_value:
+    path:     /routing/default/{id}
+    defaults: { _controller: RoutingBundle:Default:index, id: 0 }
+    
