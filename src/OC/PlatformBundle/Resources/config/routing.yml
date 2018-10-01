@@ -103,4 +103,7 @@ translation:
     defaults:
          _controller: OCPlatformBundle:TranslationAndPlurazation:trans
          
-       
+infra:
+    path: /infra/toto/{name}
+    defaults:
+         _controller: OCPlatformBundle:Infra:infra       

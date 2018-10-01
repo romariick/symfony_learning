@@ -29,7 +29,7 @@ class LoadUser implements FixtureInterface
         $user3->setPassword('mypwd');
         $user3->setRoles('Roles');
 
-        $obj->persist();
+        $obj->persist($user3);
         $obj->flush();
     }
 }

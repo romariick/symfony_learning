@@ -35,4 +35,15 @@ services:
         
     route_by_service:
         class: OC\PlateformBundlle\Controller\ServiceController
-        
+
+    metier_users:
+        class: OC\PlatformBundle\Repository\UserRepository
+        arguments:
+           - "@doctrine.orm.default_entity_manager"
+           
+    read_users:
+        class: OC\PlatformBundle\Services\ReadUsers
+        arguments:
+            - "@metier_users"
+            
+         
